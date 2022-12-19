@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+import io
+
+
 def plot_3d(df, x, y, z, country):
     
     
