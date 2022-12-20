@@ -2,8 +2,17 @@ import matplotlib.pyplot as plt
 import io
 
 
-def plot_3d(df, x, y, z, country):
+def plot_3d(df: pd.DataFrame, x: str, y: str, z: str, country: str):
+    """
+    Generates a 3D scatterplot of data points from a dataframe with specified columns as the plot axes and a country filter.
     
+    Parameters:
+    - df: the input dataframe
+    - x: the column name for the x axis
+    - y: the column name for the y axis
+    - z: the column name for the z axis
+    - country: the country to filter the data by
+    """
     
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
